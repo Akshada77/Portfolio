@@ -21,5 +21,5 @@ This project showcases a personal portfolio website designed to highlight skills
 
 ## Live Demo
 
-You can view the live portfolio [here](https://your-project-link.com).
+You can view the live portfolio [here](https://akshada77.github.io/Portfolio/).
  
