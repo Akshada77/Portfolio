@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">My Work</a></li>
+                    <!-- <li><a href="#">Accomplishments</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>Akshada Nalkar</span><br>from Maharashtra, India</h1>
+            </div>
+        </div>
+    </div>
+<!-----------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my-passport-photo.jpg" class="MyPhoto">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Akshada Nalkar, a third year student at Cummins College of Engineering,
+                        pursuing my Btech in Electronics and Telecommunication. 
+                        I am from a small town Ekrukhe near Rahata in Ahmednagar district of Maharashtra. I have completed my primary and secondary education from Sharad Pawar International School, Manur Nashik. I am recognized for my leadership qualities and teamwork. I have always been
+                        passionate about technology and programming, and I am constantly striving to expand
+                        my knowledge and skills in this field as a member of the coding club of my college. I'm
+                        learning programming languages such as Python, Java, and web technologies . My strengths are, I am a fast learner and also an effective communicator, able to explain complex
+                        concepts in a way that is easy to understand. Additionally, I am highly adaptable, able to
+                        work well in a variety of environments and under tight deadlines. I am also a strong
+                        leader, able to motivate and guide my team towards achieving their goals. I have
+                        excellent time management skills, which enable me to prioritize tasks and meet
+                        deadlines efficiently.
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Accomplishments')">Accomplishments</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span><a href="https://drive.google.com/file/d/1RGdtWopInP97FjAfgsVyVzxmVG3qHyJB/view?usp=sharing">
+                                MKSSS's Cummins College of Engineering for Women, Pune</a></span>
+                                <br>B.Tech in Electronics and Telecommunication(Third Year)<br>
+                                <b>CGPA - 9.25/10</b></li>
+                            <li><span><a href="https://drive.google.com/file/d/1iKyLb1N8pSRrikEiYBnVQq4l955eH8bg/view?usp=sharing">
+                                Sharad Pawar International School, Manur, Nashik</a></span>
+                                <br>XII CBSE Board -<b>95%</b></li>
+                            <li><span><a href="https://drive.google.com/file/d/1DO4Vn6kOlVasHXAHy0C9GGoVukxjExNW/view?usp=sharing">
+                                Sharad Pawar International School, Manur, Nashik</a></span>
+                                <br>X CBSE Board -<b>96.4%</b></li>
+                        </ul> 
+                    </div>
+
+                    <div class="tab-contents" id="Accomplishments">
+                        <ul>
+                            <li><span>BNY Mellon Carrer Catalyst Program'24</span>
+                                <br>Selected as <b>one</b> of the <b>14</b> candidates among Second Year and Third Year students.</li>
+                            <li><span>Tech Fest CCOEW - Innovation'23</span>
+                                <br>One of the Top 10 Performers in Web Roorkie (Web Development Hackathon).</li>
+                            <li><span>Reliance Foundation Scholar'23</span>
+                                <br>Selected as <b>one</b> of <b>5000</b> Scholars (from <b>40,000</b> applicants), recognising academic excellence and leadership qualities.</li>
+                            <li><span>Schindler Igniting Minds(SIMs) Scholar (2022-23)</span></li>
+                            <li><span>Cleared JEE Advance 2022 with OBC-NCL rank of 8845</span></li>
+                            <li><span>Science Olympiad Foundation(SOF)</span>
+                                <br>Participated and <b>won</b> many <b>awards</b> in <b>Maths</b> and <b>Science</b> Olympiads conducted by SOF(2011-2017).</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li>Volleyball</li>
+                            <li>Practising Calligraphy</li>
+                            <li>Listening Music</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Skills----------------->
+    <h1 class="sub-title" id="skills">My Skills</h1>
+    <section>
+        <!-- Technical Skills -->
+        <div class="container1" >
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar"><i style="color:orange" class="fa-brands fa-html5"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:#147bbc" class="fa-brands fa-css3"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:#b0bc1e" class="fa-brands fa-js"></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line JavaScript">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color:#69bcbc" class="fa-brands fa-java"></i>
+                    <div class="info">
+                        <span>Java</span>
+                    </div>
+                    <div class="progress-line Java">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#c32ec9" class="fa-brands fa-python"></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line Python">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <div class="container1" >
+            <h1 class="heading1" >Professional Skills</h1>
+            <div class="radial-bars">
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Creativity</div>
+                </div>
+    
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Communication</div>
+                </div>
+    
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Team Work</div>
+                </div>
+    
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Time Management</div>
+                </div>
+    
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Leadership</div>
+                </div>
+    
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Motivated</div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <!---------------Projects---------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/PortFolio_CoverPage1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Developed a responsive and interactive personal portfolio 
+                        website using HTML, CSS and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/taskmanager_CoverPage2.png">
+                    <div class="layer">
+                        <h3>Task Manager GUI<br><h5><i>( Buffer Event by Loop Club, CCOEW )</i></h5></h3>
+                        <p>Engineered a GUI task management system using Java and Swing framework, 
+                        enabling task addition, viewing, deletion, and detail display.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Currency Convertor Website</h3>
+                        <p>Built a dynamic Currency Converter website using HTML, CSS, and JavaScript, 
+                        integrating an exchange rate API for real-time currency rates and conversions.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Akshada77" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>akshadanalkar2004@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8830244061</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/akshada-nalkar-34467a260/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/akshadaaah/?next=%2Fakshahaha._%2F"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button" id="form-received">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Akshada Nalkar. Made with &hearts; </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
